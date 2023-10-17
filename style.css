@@ -1,0 +1,195 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Signika+Negative:wght@300&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,700&family=Signika+Negative:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,700;0,900;1,700&family=Signika+Negative:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Signika+Negative:wght@300&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFE5E5;
+}
+.text-font{
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+    padding-top: 2rem;
+}
+
+.info{
+    color: blueviolet;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(yellow, orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.info:hover{
+    background: linear-gradient(orange, yellow); 
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.right-info{
+    color: #F2ECBE;
+    font-size: 0.8rem;
+    font-family: 'Signika Negative', sans-serif;
+    width: 35%;
+    height: 25vh;
+    background-color: #5C5470;
+    border-radius: 25px;
+    margin: 6rem 0 0 0;
+    display: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.none{
+   display: block;
+}
+
+li{
+    margin: 10px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    width: 6%;
+    height: 2.5rem;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 22px;
+    font-size: 15px;
+}
+.btn:hover{
+    font-size: 15px;
+    background-color: rgb(226, 39, 247);
+    border: #5C5470;
+    color: black;
+}
+.input{
+    width: 22%;
+    height: 2.5rem;
+    border-radius: 25px;
+    padding-left: 15px;
+}
+
+.box{
+  position: relative;
+  bottom: 4rem;
+}
+
+.text-box{
+    width: 50%;
+    border-radius: 25px 25px 0 0;
+    height: 10vh;
+    padding-left: 20px;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    visibility: hidden;
+    background-color: #A8DF8E;
+    /* font-family: 'Roboto', sans-serif;
+    font-family: 'Signika Negative', sans-serif; */
+    font-family: 'Lilita One', 'cursive';
+}
+
+.text-box-2{
+    background-color: #F3FDE8;
+    margin: auto;
+    padding-left: 20px;
+    border-radius: 0 0 25px 25px;
+    width: 50%;
+    height: 35vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    font-family: 'Lilita One', 'cursive';
+}
+
+.display{
+    visibility: inherit;
+}
+
+img{
+    width: 50%;
+    image-orientation: inherit;
+}
+
+li{
+    margin: 1.1rem 0 0 3rem;
+ }
+
+
+@media screen and (max-width : 800px){
+    .btn {
+        width: 40%;
+        margin: 10px auto;
+    }
+
+    .center {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input {
+        width: 75vw;
+        height: 2.5rem;
+        border-radius: 25px;
+        padding-left: 15px;
+    }
+
+    .right-info {
+        color: #F2ECBE;
+        font-size: 0.8rem;
+        font-family: 'Signika Negative', sans-serif;
+        width: 90%;
+        height: 30vh;
+        background-color: #5C5470;
+        border-radius: 25px;
+        margin: 6.6rem auto 0 auto;
+        z-index: 1;
+        /* display: none; */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .text-box {
+        width: 78%;
+        font-size: 22px;
+    }
+
+    .text-box-2 {
+        width: 78%;
+        font-size: 24px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 85%;
+        image-orientation: inherit;
+    }
+   
+}
